@@ -1,0 +1,67 @@
+@use '../Utils/utils.scss' as *;
+
+.list-item-element {
+	height: 300px;
+	width: 100%;
+	position: relative;
+
+	@media only screen and (min-width: $breakpoint-medium) {
+		width: 50%;
+	}
+
+	.list-item-element-descripton-wrapper {
+		background: rgba($primary-color-darker, .7);
+		bottom: 0;
+		color: $descirption-color;
+		display: flex;
+		height: 100px;
+		position: absolute;
+		transition: $default-transition;
+		width: 100%;
+	}
+
+	.list-item-element-description {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		padding: $base-spacer calc($base-spacer*2);
+		width: 100%;
+	}
+
+	h3 {
+		font-family: $heading-font;
+		font-size: $heading-font-size;
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 100%;
+	}
+
+	img {
+		background: url('../Utils/tail-spin.svg') no-repeat center;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+		transition: $default-transition;
+		width: 100%;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		img {
+			filter: grayscale(1);
+		}
+
+		.list-item-element-descripton-wrapper {
+			padding-bottom: $base-spacer;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+$primary-color: paleturquoise;
+$primary-color-darker: turquoise;
+$secondary-color: #FFF;
+$descirption-color: #000;
+
+$base-spacer: 15px;
+$base-font-size: 18px;
+$heading-font-size: 22px;
+$base-border: 1px solid $descirption-color;
+
+$default-transition: ease-in-out .3s;
+
+$breakpoint-medium: 768px;
+
+$basic-font: 'Quicksand', Arial, Helvetica, sans-serif;
+$heading-font: 'Josefin Sans', Arial, Helvetica, sans-serif;
